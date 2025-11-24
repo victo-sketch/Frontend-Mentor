@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="icon"
+        href="./stats-preview-card-component-main/stats-preview-card-component-main/images/favicon-32x32.png">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --Very--dark--blue--main--background: hsl(233, 47%, 7%);
+            --Dark--desaturated--card--background: hsl(244, 38%, 16%);
+            --Soft--violetaccent: hsl(277, 64%, 61%);
+            --White--mainheadingstats: hsl(0, 0%, 100%);
+            --Slightlytransparentwhite--mainparagraph: hsla(0, 0%, 100%, 0.75);
+            --Slightlytransparent--whitestat--headings: hsla(0, 0%, 100%, 0.6)
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100vh;
+            background-color: hsl(233, 47%, 7%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub-container1 {
+            width: 35%;
+            height: 50%;
+            background-color: hsl(244, 38%, 16%);
+        }
+
+        .head {
+            width: 60%;
+            height: 33%;
+            color: var(--White--mainheadingstats);
+            margin: 30px auto;
+            word-spacing: 2px;
+        }
+
+        .head span {
+            color: var(--Soft--violetaccent);
+        }
+
+        .para {
+            width: 60%;
+            height: 33%;
+            margin: 10px auto;
+            margin-top: -8%;
+            color: hsla(0, 0%, 100%, 0.6);
+
+        }
+
+        .counts {
+            width: 60%;
+            height: 33%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20%;
+            margin-top: -10%;
+        }
+
+        .one {
+            color: var(--White--mainheadingstats);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .two {
+            color: var(--White--mainheadingstats);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .three {
+            color: var(--White--mainheadingstats);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .sub-container2 {
+            width: 35%;
+            height: 50%;
+            background: url('./images/image-header-desktop.jpg');
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="sub-container1">
+            <div class="head">
+                <h1> Get <span>insights</span> that help your business grow.</h1>
+            </div>
+            <div class="para">
+                <p> Discover the benefits of data analytics and make better decisions regarding revenue, customer
+                    experience, and overall efficiency.
+                </p>
+            </div>
+            <div class="counts">
+                <div class="one">
+                    <p> 10k+ </p>
+                    <p>Companies</p>
+                </div>
+                <div class="two">
+                    <p> 314 </p>
+                    <p>templates</p>
+                </div>
+                <div class="three">
+                    <p>12m+</p>
+                    <p>queries</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container2">
+            <!-- <img src="./stats-preview-card-component-main/stats-preview-card-component-main/images/image-header-desktop.jpg"
+                alt="image"> -->
+        </div>
+    </div>
+</body>
+
+</html>
